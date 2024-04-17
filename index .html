@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>PASSWORD GENERATOR</h2>
+        <div class="password">
+            <input readonly placeholder="Password" class="display" password-data>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password length</p>
+                <p data-length>0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" handel-slider>
+            <!-- checkbox -->
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include uppercase letter</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include lowercase letter</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="number">
+                <label for="number">Include number</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Include symbol</label>
+            </div>
+            <div class="strenth">
+                <p>Strength </p>
+                <div class="Indicator" data-indicator></div>
+            </div>
+             <!-- generate password -->
+             <button class="generate-button">GENERATE PASSWORD</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
